@@ -7,24 +7,33 @@ import './Chef.css';
 const Chef = () => (
   <div className="app__bg app__wrapper section__padding">
     <div className="app__wrapper_img app__wrapper_img-reverse">
-      <img src={images.chef} alt="chef_image" />
+      <img src={images.chef} alt="Adensa Kitchen chef" />
     </div>
+
     <div className="app__wrapper_info">
-      <SubHeading title="Chef's word" />
-      <h1 className="headtext__cormorant">What we believe in</h1>
+      <SubHeading title="The kitchen" />
+      <h1 className="headtext__cormorant">Food with a sense of place.</h1>
 
       <div className="app__chef-content">
         <div className="app__chef-content_quote">
-          <img src={images.quote} alt="quote_image" />
-          <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .</p>
+          <img src={images.quote} alt="" />
+          <p className="p__opensans">
+            Food has a way of carrying memories across borders. At Adensa Kitchen,
+            every dish begins with that connection to home and evolves through a
+            contemporary perspective.
+          </p>
         </div>
-        <p className="p__opensans"> auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc. </p>
+
+        <p className="p__opensans">
+          Our approach is simple: respect the ingredients, honour the traditions,
+          and create an experience that feels at home in both Ghana and Germany.
+        </p>
       </div>
 
       <div className="app__chef-sign">
-        <p>Kevin Luo</p>
-        <p className="p__opensans">Chef & Founder</p>
-        <img src={images.sign} alt="sign_image" />
+        <p>Selasey Gbeddy</p>
+        <p className="p__opensans">Chef &amp; Founder</p>
+        <img src={images.sign} alt="Founder signature" />
       </div>
     </div>
   </div>

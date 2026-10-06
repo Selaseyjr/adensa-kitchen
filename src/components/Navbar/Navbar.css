@@ -15,7 +15,34 @@
 }
 
 .app__navbar-logo img {
-    width: 150px;
+    width: 46px;
+}
+
+.app__navbar-logo_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.9rem;
+}
+
+.app__navbar-logo_title {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.app__navbar-logo_subtitle {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+    white-space: nowrap;
 }
 
 .app__navbar-links {
@@ -104,7 +131,15 @@
 
 @media screen and (min-width: 2000px) {
     .app__navbar-logo img {
-        width: 210px;
+        width: 64px;
+    }
+
+    .app__navbar-logo_title {
+        font-size: 34px;
+    }
+
+    .app__navbar-logo_subtitle {
+        font-size: 13px;
     }
 }
 
@@ -128,6 +163,14 @@
     }
 
     .app__navbar-logo img {
-        width: 110px;
+        width: 36px;
+    }
+
+    .app__navbar-logo_title {
+        font-size: 18px;
+    }
+
+    .app__navbar-logo_subtitle {
+        display: none;
     }
 }

@@ -8,9 +8,10 @@
 }
 
 .app__aboutus-overlay img {
-    width: 391px;
-    height: 415px;
+    width: 300px;
+    height: auto;
     z-index: 0;
+    opacity: 0.9;
 }
 
 .app__aboutus-content {
@@ -75,7 +76,7 @@
 
 @media screen and (max-width: 650px) {
     .app__aboutus-overlay img {
-        width: 80%;
-        height: 320px;
+        width: 60%;
+        height: auto;
     }
 }

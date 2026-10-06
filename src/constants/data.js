@@ -1,82 +1,82 @@
 import images from './images';
 
-const wines = [
+const iceChilledBeverages = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'Sobolo',
+    price: '€7',
+    tags: 'Hibiscus | Ginger | Citrus',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Ginger & Lime Cooler',
+    price: '€8',
+    tags: 'Fresh ginger | Lime | Mint',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: 'Pineapple Mint',
+    price: '€8',
+    tags: 'Pineapple | Mint | Citrus',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    title: 'Tropical Hibiscus',
+    price: '€8',
+    tags: 'Hibiscus | Pineapple | Orange',
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    title: 'Mango Ginger',
+    price: '€8',
+    tags: 'Mango | Ginger | Lime',
   },
 ];
 
-const cocktails = [
+const mainDishes = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    title: 'Jollof Rice',
+    price: '€16',
+    tags: 'Tomato | Aromatic spices | Grilled vegetables',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: 'Charcoal Tilapia',
+    price: '€22',
+    tags: 'Whole tilapia | Fresh herbs | House pepper sauce',
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    title: 'Kelewele',
+    price: '€9',
+    tags: 'Spiced plantain | Roasted peanuts',
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    title: 'Waakye',
+    price: '€17',
+    tags: 'Rice | Beans | Contemporary accompaniments',
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    title: 'Groundnut Chicken',
+    price: '€19',
+    tags: 'Slow-cooked chicken | Roasted peanut sauce',
   },
 ];
 
 const awards = [
   {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    number: '1',
+    title: 'Heritage',
+    subtitle: 'Honouring the flavours and traditions of West Africa.',
   },
   {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    number: '2',
+    title: 'Craft',
+    subtitle: 'Thoughtful ingredients, preparation and presentation.',
   },
   {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    number: '3',
+    title: 'Community',
+    subtitle: 'Creating a space where cultures meet around food.',
   },
   {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    number: '4',
+    title: 'Innovation',
+    subtitle: 'Reimagining tradition through a contemporary dining experience.',
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { iceChilledBeverages, mainDishes, awards };
