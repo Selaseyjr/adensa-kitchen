@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#211C15"/>
+      <stop offset="1" stop-color="#0C0C0C"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5C4432"/>
+      <stop offset="0.55" stop-color="#3A2A1E"/>
+      <stop offset="1" stop-color="#1F1610"/>
+    </linearGradient>
+    <linearGradient id="sauce" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C24A22"/>
+      <stop offset="1" stop-color="#7E2A12"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="mid" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <ellipse cx="400" cy="530" rx="305" ry="215" fill="#16120E"/>
+  <ellipse cx="400" cy="530" rx="305" ry="215" stroke="#DCCA87" stroke-opacity="0.3" stroke-width="1.5"/>
+  <ellipse cx="400" cy="530" rx="252" ry="172" fill="#0F0C0A"/>
+  <ellipse cx="400" cy="590" rx="200" ry="52" fill="url(#sauce)" opacity="0.85" filter="url(#soft)"/>
+  <g filter="url(#mid)">
+    <path d="M212 512 C270 428 430 404 546 452 C600 474 618 506 588 542 C516 606 322 616 244 566 C210 544 198 528 212 512 Z" fill="url(#body)"/>
+    <path d="M588 542 L648 588 C634 596 606 588 586 570 Z" fill="#2A1D14"/>
+    <path d="M238 470 C260 452 292 442 316 440 L300 476 C278 476 256 474 238 470 Z" fill="#33241A"/>
+  </g>
+  <g stroke="#120C08" stroke-width="9" stroke-linecap="round" opacity="0.8" filter="url(#mid)">
+    <path d="M292 446 C286 486 288 528 300 566"/>
+    <path d="M352 430 C346 480 348 534 360 578"/>
+    <path d="M414 424 C410 476 412 532 424 580"/>
+    <path d="M476 432 C472 480 474 530 484 570"/>
+    <path d="M532 450 C530 488 532 524 540 552"/>
+  </g>
+  <g filter="url(#mid)">
+    <path d="M262 470 C286 448 330 436 372 438" stroke="#5F7F46" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <ellipse cx="266" cy="466" rx="10" ry="5" fill="#6B8F4E" transform="rotate(-30 266 466)"/>
+    <ellipse cx="308" cy="448" rx="10" ry="5" fill="#7DA05B" transform="rotate(-12 308 448)"/>
+    <ellipse cx="356" cy="442" rx="10" ry="5" fill="#6B8F4E" transform="rotate(-6 356 442)"/>
+    <ellipse cx="530" cy="560" rx="10" ry="5" fill="#7DA05B" transform="rotate(20 530 560)"/>
+    <ellipse cx="556" cy="544" rx="10" ry="5" fill="#6B8F4E" transform="rotate(8 556 544)"/>
+  </g>
+  <circle cx="238" cy="600" r="30" fill="#8F9A3A" opacity="0.9" filter="url(#mid)"/>
+  <circle cx="238" cy="600" r="19" fill="#C9CF6E" opacity="0.8" filter="url(#mid)"/>
+  <rect x="28" y="28" width="744" height="944" stroke="#DCCA87" stroke-opacity="0.45" stroke-width="1.2"/>
+  <rect x="64" y="850" width="72" height="2" fill="#DCCA87" opacity="0.85"/>
+  <text x="64" y="906" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="42" letter-spacing="1.5" fill="#DCCA87">Charcoal Tilapia</text>
+</svg>

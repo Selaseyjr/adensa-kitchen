@@ -8,6 +8,12 @@ import gallery04 from '../assets/gallery04.png';
 import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
+import jollofRice from '../assets/menu/jollof-rice.svg';
+import charcoalTilapia from '../assets/menu/charcoal-tilapia.svg';
+import kelewele from '../assets/menu/kelewele.svg';
+import waakye from '../assets/menu/waakye.svg';
+import groundnutChicken from '../assets/menu/groundnut-chicken.svg';
+import sobolo from '../assets/menu/sobolo.svg';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
 import welcome from '../assets/welcome.png';
@@ -17,7 +23,6 @@ import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
 import award03 from '../assets/award03.png';
 import award05 from '../assets/award05.png';
-import sign from '../assets/signature.svg';
 import quote from '../assets/quote.png';
 
 export default {
@@ -31,6 +36,12 @@ export default {
   knife,
   logo,
   menu,
+  jollofRice,
+  charcoalTilapia,
+  kelewele,
+  waakye,
+  groundnutChicken,
+  sobolo,
   overlaybg,
   spoon,
   welcome,
@@ -40,6 +51,5 @@ export default {
   award02,
   award03,
   award05,
-  sign,
   quote,
 };

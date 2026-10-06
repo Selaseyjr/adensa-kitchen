@@ -5,7 +5,7 @@ import { images, data } from '../../constants';
 import './Laurels.css';
 
 const AwardCard = ({ award: { number, title, subtitle } }) => (
-  <div className="app__laurels_awards-card">
+  <div className="app__laurels_awards-card" data-reveal>
     <p className="app__laurels_awards-card_number">{number}</p>
     <div className="app__laurels_awards-card_content">
       <p className="p__cormorant" style={{ color: '#DCCA87' }}>{title}</p>
@@ -15,7 +15,7 @@ const AwardCard = ({ award: { number, title, subtitle } }) => (
 );
 
 const Laurels = () => (
-  <div className="app__bg app__wrapper section__padding" id="experience">
+  <div className="app__bg app__wrapper section__padding" id="experience" data-reveal>
     <div className="app__wrapper_info">
       <SubHeading title="What guides us" />
       <h1 className="headtext__cormorant">Our Philosophy</h1>

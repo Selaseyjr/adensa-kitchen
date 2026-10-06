@@ -5,6 +5,7 @@ const iceChilledBeverages = [
     title: 'Sobolo',
     price: '€7',
     tags: 'Hibiscus | Ginger | Citrus',
+    img: images.sobolo,
   },
   {
     title: 'Ginger & Lime Cooler',
@@ -33,26 +34,31 @@ const mainDishes = [
     title: 'Jollof Rice',
     price: '€16',
     tags: 'Tomato | Aromatic spices | Grilled vegetables',
+    img: images.jollofRice,
   },
   {
     title: 'Charcoal Tilapia',
     price: '€22',
     tags: 'Whole tilapia | Fresh herbs | House pepper sauce',
+    img: images.charcoalTilapia,
   },
   {
     title: 'Kelewele',
     price: '€9',
     tags: 'Spiced plantain | Roasted peanuts',
+    img: images.kelewele,
   },
   {
     title: 'Waakye',
     price: '€17',
     tags: 'Rice | Beans | Contemporary accompaniments',
+    img: images.waakye,
   },
   {
     title: 'Groundnut Chicken',
     price: '€19',
     tags: 'Slow-cooked chicken | Roasted peanut sauce',
+    img: images.groundnutChicken,
   },
 ];
 

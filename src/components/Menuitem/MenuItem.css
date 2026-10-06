@@ -18,6 +18,11 @@
     height: 1px;
     background: var(--color-golden);
     margin: 0 1rem;
+    transition: width 0.35s ease;
+}
+
+.app__menuitem:hover .app__menuitem-dash {
+    width: 124px;
 }
 
 .app__menuitem-price {

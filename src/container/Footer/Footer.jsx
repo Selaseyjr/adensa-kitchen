@@ -6,17 +6,13 @@ import { images } from '../../constants';
 import './Footer.css';
 
 const Footer = () => (
-  <div className="app__footer section__padding" id="login">
+  <div className="app__footer section__padding" id="login" data-reveal>
     <FooterOverlay />
     <Newsletter />
 
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
-        <h1 className="app__footer-headtext">Visit Us</h1>
-        <p className="p__opensans">Adensa Kitchen</p>
-        <p className="p__opensans">Neckarstraße 15</p>
-        <p className="p__opensans">64293 Darmstadt</p>
-        <p className="p__opensans">Hessen, Germany</p>
+        <h1 className="app__footer-headtext">Contact Us</h1>
         <p className="p__opensans">+49 6151 000000</p>
         <p className="p__opensans">hello@adensa-kitchen.de</p>
       </div>

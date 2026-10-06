@@ -7,9 +7,11 @@ import './Header.css';
 const Header = () => (
   <div className="app__header app__wrapper section__padding" id="home">
     <div className="app__wrapper_info">
-      <SubHeading title="A taste of West Africa" />
-      <h1 className="app__header-h1">Where Ghanaian heritage meets contemporary dining.</h1>
-      <p className="app__header-tagline">
+      <div className="hero-enter">
+        <SubHeading title="A taste of West Africa" />
+      </div>
+      <h1 className="app__header-h1 hero-enter d1">Where Ghanaian heritage meets contemporary dining.</h1>
+      <p className="app__header-tagline hero-enter d2">
         Rooted in the flavours of West Africa and shaped by a modern European perspective,
         Adensa Kitchen brings Ghanaian culinary traditions to the heart of Darmstadt.
       </p>

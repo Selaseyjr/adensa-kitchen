@@ -37,6 +37,18 @@
     margin-left: 1rem;
 }
 
+.app__laurels_awards .app__laurels_awards-card:nth-child(2) {
+    transition-delay: 0.12s;
+}
+
+.app__laurels_awards .app__laurels_awards-card:nth-child(3) {
+    transition-delay: 0.24s;
+}
+
+.app__laurels_awards .app__laurels_awards-card:nth-child(4) {
+    transition-delay: 0.36s;
+}
+
 @media screen and (max-width: 450px) {
     .app__laurels_awards-card {
         min-width: 100%;
