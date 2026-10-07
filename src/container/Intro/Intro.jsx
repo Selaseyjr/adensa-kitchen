@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { meal } from '../../constants';
+import { meal, images } from '../../constants';
 import './Intro.css';
 
 const VISIBLE_THRESHOLD = 0.5;
@@ -43,6 +43,8 @@ const Intro = () => {
         ref={vidRef}
         src={meal}
         type="video/mp4"
+        poster={images.mealPoster}
+        preload="metadata"
         loop
         controls={false}
         muted

@@ -17,7 +17,12 @@ const Header = () => (
       </p>
     </div>
     <div className="app__wrapper_img">
-      <img src={images.welcome} alt="Adensa Kitchen dining experience" />
+      <img
+        src={images.welcome}
+        alt="Adensa Kitchen dining experience"
+        decoding="async"
+        fetchPriority="high"
+      />
     </div>
   </div>
 );

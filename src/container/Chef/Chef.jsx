@@ -7,7 +7,7 @@ import './Chef.css';
 const Chef = () => (
   <div className="app__bg app__wrapper section__padding" id="chef" data-reveal>
     <div className="app__wrapper_img app__wrapper_img-reverse">
-      <img src={images.chef} alt="Adensa Kitchen chef" />
+      <img src={images.chef} alt="Adensa Kitchen chef" loading="lazy" decoding="async" />
     </div>
 
     <div className="app__wrapper_info">

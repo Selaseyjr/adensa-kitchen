@@ -60,7 +60,14 @@ const SpecialMenu = () => {
         <div className="app__specialMenu-menu_img">
           <div className="app__specialMenu-menu_collage">
             {featuredDishes.map((dish) => (
-              <img key={dish.title} src={dish.img} alt={dish.title} data-reveal />
+              <img
+                key={dish.title}
+                src={dish.img}
+                alt={dish.title}
+                loading="lazy"
+                decoding="async"
+                data-reveal
+              />
             ))}
           </div>
         </div>

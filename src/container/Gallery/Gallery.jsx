@@ -59,7 +59,12 @@ const Gallery = () => {
               onClick={() => setLightboxIndex(index)}
               aria-label={`Open gallery image ${index + 1} of ${galleryImages.length}`}
             >
-              <img src={image} alt={`Adensa Kitchen gallery photograph ${index + 1}`} />
+              <img
+                src={image}
+                alt={`Adensa Kitchen gallery photograph ${index + 1}`}
+                loading="lazy"
+                decoding="async"
+              />
               <BsInstagram className="gallery__image-icon" aria-hidden="true" />
             </button>
           ))}

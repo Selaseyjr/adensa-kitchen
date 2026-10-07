@@ -28,7 +28,12 @@ const Laurels = () => (
     </div>
 
     <div className="app__wrapper_img">
-      <img src={images.laurels} alt="Adensa Kitchen philosophy" />
+      <img
+        src={images.laurels}
+        alt="Adensa Kitchen philosophy"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </div>
 );

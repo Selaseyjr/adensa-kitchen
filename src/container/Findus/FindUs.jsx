@@ -46,7 +46,12 @@ const FindUs = () => (
     </div>
 
     <div className="app__wrapper_img">
-      <img src={images.findus} alt="Adensa Kitchen in Darmstadt" />
+      <img
+        src={images.findus}
+        alt="Adensa Kitchen in Darmstadt"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   </div>
 );

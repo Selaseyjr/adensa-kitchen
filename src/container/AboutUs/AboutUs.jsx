@@ -23,7 +23,7 @@ const AboutUs = () => (
       </div>
 
       <div className="app__aboutus-content_knife flex__center">
-        <img src={images.knife} alt="" />
+        <img src={images.knife} alt="" loading="lazy" decoding="async" />
       </div>
 
       <div className="app__aboutus-content_history">
