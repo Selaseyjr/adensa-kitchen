@@ -23,20 +23,57 @@
     }
 }
 
-.app__laurels_awards-card_number {
-    font-family: var(--font-base);
-    color: var(--color-golden);
-    font-size: 40px;
-    line-height: 1;
-    min-width: 64px;
+/* Gold rule accent beside each card. Hidden start state only where
+   animations can actually run (html.frames-ok); frameless environments
+   render the accents in their final, drawn state. */
+.app__laurels_awards-card_rule {
+    flex: none;
+    align-self: flex-start;
+    display: block;
+    width: 3px;
+    height: 64px;
+    margin: 6px 1.25rem 0 0;
+    background: var(--color-golden);
+    opacity: 0.85;
+}
+
+html.frames-ok .app__laurels_awards-card_rule {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html.frames-ok [data-reveal].is-revealed .app__laurels_awards-card_rule {
+    transform: scaleY(1);
 }
 
 .app__laurels_awards-card_content {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
+/* Hairline gold flourish beneath the section heading that draws in from
+   the left as the section reveals. */
+.app__laurels_goldline {
+    display: block;
+    width: 96px;
+    height: 1px;
+    margin-top: 1.75rem;
+    background: linear-gradient(90deg, var(--color-golden), rgba(220, 202, 135, 0));
+}
+
+html.frames-ok .app__laurels_goldline {
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) 0.15s;
+}
+
+html.frames-ok [data-reveal].is-revealed .app__laurels_goldline {
+    background-size: 100% 100%;
+}
+
+/* Staggered reveal: each card follows the previous one. */
 .app__laurels_awards .app__laurels_awards-card:nth-child(2) {
     transition-delay: 0.12s;
 }

@@ -14,7 +14,6 @@ import sobolo from '../assets/menu/sobolo.webp';
 import spoon from '../assets/spoon.svg';
 import welcome from '../assets/welcome.webp';
 import findus from '../assets/findus.webp';
-import laurels from '../assets/laurels.webp';
 import mealPoster from '../assets/meal-poster.webp';
 import quote from '../assets/quote.png';
 
@@ -35,7 +34,6 @@ export default {
   spoon,
   welcome,
   findus,
-  laurels,
   mealPoster,
   quote,
 };

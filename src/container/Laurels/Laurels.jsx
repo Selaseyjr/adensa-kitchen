@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { SubHeading } from '../../components';
-import { images, data } from '../../constants';
+import { data } from '../../constants';
 import './Laurels.css';
 
-const AwardCard = ({ award: { number, title, subtitle } }) => (
+const AwardCard = ({ award: { title, subtitle } }) => (
   <div className="app__laurels_awards-card" data-reveal>
-    <p className="app__laurels_awards-card_number">{number}</p>
+    <span className="app__laurels_awards-card_rule" aria-hidden="true" />
     <div className="app__laurels_awards-card_content">
       <p className="p__cormorant" style={{ color: '#DCCA87' }}>{title}</p>
       <p className="p__opensans">{subtitle}</p>
@@ -19,21 +19,13 @@ const Laurels = () => (
     <div className="app__wrapper_info">
       <SubHeading title="What guides us" />
       <h1 className="headtext__cormorant">Our Philosophy</h1>
+      <span className="app__laurels_goldline" aria-hidden="true" />
 
       <div className="app__laurels_awards">
         {data.awards.map((award) => (
           <AwardCard award={award} key={award.title} />
         ))}
       </div>
-    </div>
-
-    <div className="app__wrapper_img">
-      <img
-        src={images.laurels}
-        alt="Adensa Kitchen philosophy"
-        loading="lazy"
-        decoding="async"
-      />
     </div>
   </div>
 );

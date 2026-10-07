@@ -1,9 +1,32 @@
 import React from 'react';
 
-import { SubHeading } from '../../components';
+import { ReservationModal, ReservationToast, SubHeading } from '../../components';
 import { images } from '../../constants';
 
-const FindUs = () => (
+const FindUs = () => {
+  const triggerRef = React.useRef(null);
+  const [reservationOpen, setReservationOpen] = React.useState(false);
+  const [toastVisible, setToastVisible] = React.useState(false);
+
+  const openReservation = React.useCallback(() => {
+    setToastVisible(false);
+    setReservationOpen(true);
+  }, []);
+
+  const closeReservation = React.useCallback(() => {
+    setReservationOpen(false);
+    window.requestAnimationFrame(() => triggerRef.current?.focus());
+  }, []);
+
+  const confirmReservation = React.useCallback(() => {
+    setReservationOpen(false);
+    setToastVisible(true);
+    window.requestAnimationFrame(() => triggerRef.current?.focus());
+  }, []);
+
+  const dismissToast = React.useCallback(() => setToastVisible(false), []);
+
+  return (
   <div className="app__bg app__wrapper section__padding" id="contact" data-reveal>
     <div className="app__wrapper_info">
       <SubHeading title="Visit Adensa" />
@@ -40,6 +63,8 @@ const FindUs = () => (
         type="button"
         className="custom__button"
         style={{ marginTop: '2rem' }}
+        ref={triggerRef}
+        onClick={openReservation}
       >
         Plan Your Visit
       </button>
@@ -53,7 +78,16 @@ const FindUs = () => (
         decoding="async"
       />
     </div>
-  </div>
-);
+
+    {reservationOpen && (
+      <ReservationModal
+        onClose={closeReservation}
+        onConfirmed={confirmReservation}
+      />
+    )}
+
+    <ReservationToast open={toastVisible} onDismissed={dismissToast} />
+  </div>);
+};
 
 export default FindUs;

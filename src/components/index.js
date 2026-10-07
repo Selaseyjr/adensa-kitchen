@@ -4,6 +4,8 @@ import FooterOverlay from './Footer/FooterOverlay';
 import MenuItem from './Menuitem/MenuItem';
 import Navbar from './Navbar/Navbar';
 import Lightbox from './Lightbox/Lightbox';
+import ReservationModal from './Reservation/ReservationModal';
+import ReservationToast from './Reservation/ReservationToast';
 
 export {
   SubHeading,
@@ -12,4 +14,6 @@ export {
   MenuItem,
   Navbar,
   Lightbox,
+  ReservationModal,
+  ReservationToast,
 };

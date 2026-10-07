@@ -1,0 +1,113 @@
+.reservation-toast {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 130;
+    max-width: min(360px, calc(100vw - 3rem));
+    pointer-events: none;
+}
+
+.reservation-toast__inner {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.9rem 1.2rem;
+    background: var(--color-black) url('../../assets/bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    border: 1px solid rgba(220, 202, 135, 0.45);
+    border-radius: 1px;
+    box-shadow: 0 14px 44px rgba(0, 0, 0, 0.55);
+    /* Base style is the visible state; the animation only plays the
+       entrance. If animations never advance (throttled or frameless
+       environments), the toast simply appears without motion instead of
+       staying hidden at the first keyframe. */
+    animation: reservation-toast-enter 0.35s ease backwards;
+}
+
+.reservation-toast__inner--leaving {
+    animation: reservation-toast-exit 0.35s ease both;
+}
+
+@keyframes reservation-toast-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes reservation-toast-exit {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+.reservation-toast__icon {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(220, 202, 135, 0.55);
+    border-radius: 50%;
+    color: var(--color-golden);
+    font-size: 18px;
+}
+
+.reservation-toast__copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.reservation-toast__title {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
+.reservation-toast__message {
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 650px) {
+    .reservation-toast {
+        right: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .reservation-toast__title {
+        font-size: 26px;
+    }
+
+    .reservation-toast__message {
+        font-size: 17px;
+    }
+
+    .reservation-toast__icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
