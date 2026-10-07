@@ -1,16 +1,28 @@
-# React + Vite
+# Adensa Kitchen — Contemporary Ghanaian Dining
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="./src/assets/adensa-kitchen-preview.png" alt="Adensa Kitchen digital dining experience" width="100%">
+</p>
 
-Currently, two official plugins are available:
+A polished digital dining experience for a contemporary Ghanaian restaurant concept in Darmstadt, Germany. The project combines **brand storytelling, UX/UI design, responsive frontend development, interactive experiences, and accessibility-focused interactions**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Highlights
 
-## React Compiler
+* Contemporary Ghanaian-inspired visual identity and digital experience
+* Responsive layout designed for **desktop, tablet, and mobile screens**
+* Interactive menu, gallery lightbox, video experience, and reservation request flow
+* Accessible navigation, keyboard interactions, focus management, and reduced-motion support
+* Performance-optimized imagery and video assets
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Tech Stack
 
-## Expanding the ESLint configuration
+**React · JavaScript · Vite · CSS · Vercel**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Live Demo
+
+**[adensa-kitchen.vercel.app](https://adensa-kitchen.vercel.app/)**
+
+### Status
+
+**Completed · Deployed**
+
